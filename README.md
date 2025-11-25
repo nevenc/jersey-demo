@@ -5,15 +5,15 @@ An example Spring Boot with JAX-RS (Jersey) REST API endpoints.
 ## Project Overview
 
 This project showcases:
-- **Spring Boot 2.7.18** with Jersey 2.35 framework (JAX-RS 2.1)
+- **Spring Boot 3.5.8** with Jersey 3.1.11 framework (JAX-RS 3.1)
 - **RESTful API** for customer CRUD operations
 - **Spring Data JPA** for database persistence
 - **PostgreSQL** as the backend database
 
 ## Technology Stack
-- **Java 8**
-- **Spring Boot 2.7.18** - Application framework
-- **Jersey 2.35** (via Spring Boot Starter Jersey) - JAX-RS 2.1 implementation
+- **Java 25**
+- **Spring Boot 3.5.8** - Application framework
+- **Jersey 3.1.11** (via Spring Boot Starter Jersey) - JAX-RS 2.1 implementation
 - **Spring Data JPA** - Data persistence
 - **PostgreSQL 18.1** - Database
 - **Maven** - Build tool
@@ -51,7 +51,7 @@ jersey-demo/
 ## Quick Start
 
 ### Prerequisites
-- Java 8 or higher
+- Java 17 or higher
 - Maven 3.6+
 - Docker & Docker Compose (for running PostgreSQL)
 
@@ -72,7 +72,7 @@ jersey-demo/
 Or run the JAR file:
 
 ```bash
-java -jar target/jersey-demo-1.0.0.jar
+java -jar target/jersey-demo-2.0.0.jar
 ```
 
 The application will start on `http://localhost:8080`
@@ -108,7 +108,7 @@ This starts a PostgreSQL 18.1 container with:
 Or run the JAR file:
 
 ```bash
-java -jar target/jersey-demo-1.0.0.jar -Dspring.profiles.active=postgres
+java -jar target/jersey-demo-2.0.0.jar -Dspring.profiles.active=postgres
 ```
 
 The application will start on `http://localhost:8080`
